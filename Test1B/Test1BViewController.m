@@ -14,9 +14,9 @@
 
 @property (nonatomic, strong) CardMatchingGame *game;
 
-//- (Card *)getCardForButton:(id)button;
 - (NSUInteger)getIndexOfCard:(id)sender;
 - (void)updateMatchedCards;
+- (UIImage *)getBackgroundImage;
 
 @end
 
@@ -30,6 +30,15 @@
     self.game = [[CardMatchingGame alloc] initWithCardCount:16 usingDeck:deck];
     [self.scoreLabel setText:[NSString stringWithFormat:@"Score: %d", self.game.score]];
     
+    for (UIButton *b in self.buttons)
+    {
+        [b setBackgroundImage:[self getBackgroundImage] forState:UIControlStateNormal];
+    }
+}
+
+- (UIImage *)getBackgroundImage
+{
+    return [UIImage imageNamed:@"morback.png"];
 }
 
 - (void)didReceiveMemoryWarning
@@ -47,10 +56,12 @@
     if (c.chosen)
     {
         [senderAsButton setTitle:c.contents forState:UIControlStateNormal];
+        [senderAsButton setBackgroundImage:nil forState:UIControlStateNormal];
     }
     else
     {
         [senderAsButton setTitle:@"" forState:UIControlStateNormal];
+        [senderAsButton setBackgroundImage:[self getBackgroundImage] forState:UIControlStateNormal];
     }
     
     [self.scoreLabel setText:[NSString stringWithFormat:@"Score: %d", self.game.score]];
@@ -68,12 +79,6 @@
         }
     }
 }
-
-//- (Card *)getCardForButton:(id)button
-//{
-//    NSUInteger index = [self getIndexOfCard:button];
-//    return [self.game getCardByIndex:index];
-//}
 
 - (NSUInteger)getIndexOfCard:(id)sender
 {

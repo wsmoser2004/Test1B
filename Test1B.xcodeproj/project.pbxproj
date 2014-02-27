@@ -26,6 +26,7 @@
 		EFC5909D18BF88EA00DAD925 /* PlayingCard.m in Sources */ = {isa = PBXBuildFile; fileRef = EFC5909818BF88EA00DAD925 /* PlayingCard.m */; };
 		EFC5909E18BF88EA00DAD925 /* PlayingCardDeck.m in Sources */ = {isa = PBXBuildFile; fileRef = EFC5909A18BF88EA00DAD925 /* PlayingCardDeck.m */; };
 		EFC590A118BF892200DAD925 /* CardMatchingGame.m in Sources */ = {isa = PBXBuildFile; fileRef = EFC590A018BF892200DAD925 /* CardMatchingGame.m */; };
+		EFCB185618BFD1A300F53132 /* morback.png in Resources */ = {isa = PBXBuildFile; fileRef = EFCB185518BFD1A300F53132 /* morback.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		EFC5909A18BF88EA00DAD925 /* PlayingCardDeck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayingCardDeck.m; sourceTree = "<group>"; };
 		EFC5909F18BF892200DAD925 /* CardMatchingGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardMatchingGame.h; sourceTree = "<group>"; };
 		EFC590A018BF892200DAD925 /* CardMatchingGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardMatchingGame.m; sourceTree = "<group>"; };
+		EFCB185518BFD1A300F53132 /* morback.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = morback.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +129,7 @@
 		EFC5906418BF88A400DAD925 /* Test1B */ = {
 			isa = PBXGroup;
 			children = (
+				EFCB185518BFD1A300F53132 /* morback.png */,
 				EFC5909318BF88EA00DAD925 /* Card.h */,
 				EFC5909418BF88EA00DAD925 /* Card.m */,
 				EFC5909F18BF892200DAD925 /* CardMatchingGame.h */,
@@ -255,6 +258,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EFC5907718BF88A400DAD925 /* Images.xcassets in Resources */,
+				EFCB185618BFD1A300F53132 /* morback.png in Resources */,
 				EFC5906918BF88A400DAD925 /* InfoPlist.strings in Resources */,
 				EFC5907218BF88A400DAD925 /* Main.storyboard in Resources */,
 			);
@@ -491,6 +495,7 @@
 				EFC5908F18BF88A500DAD925 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EFC5909018BF88A500DAD925 /* Build configuration list for PBXNativeTarget "Test1BTests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +504,7 @@
 				EFC5909218BF88A500DAD925 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
